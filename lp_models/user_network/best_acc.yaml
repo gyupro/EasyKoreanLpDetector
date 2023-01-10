@@ -1,0 +1,17 @@
+character_list: '0123456789][초아경육타R산두가사번부명시파C히천계지다머광포충조수동관모김금루기버전용작영너도리우자차뱌악판양어터소마보배저미고로이원오러인강라O 거추북무카나주하홀중누등안울구허데노호더바문평서연대남'
+experiment_name: 'en_filtered'
+workers: 0
+lang_list: 
+        - 'en'
+batch_size: 128 #32
+FeatureExtraction: 'VGG'
+SequenceModeling: 'BiLSTM'
+Prediction: 'CTC'
+num_fiducial: 20
+network_params:
+        input_channel: 1
+        output_channel: 256
+        hidden_size: 256
+decode: 'greedy'
+imgH: 60
+imgW: 200

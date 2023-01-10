@@ -1,4 +1,6 @@
 # EasyKoreanLpDetector
+
+[테스트 URL](http://aifolio.cafe24.com/LP/)  
 깃헙에 어렵고 잘 안 돼는 한국 번호판 인식기밖에 없어서 공개합니다.
 도움이 되셨다면 스타한개 부탁드려요!
 
@@ -10,11 +12,7 @@
 번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)  
 데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)  
 
-|잘 되는 예시|잘 안되는 예시|설명|
-|------|---|---|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+
 
 강점 :
 1. 깃헙의 타 프로젝트들보다 인식을 잘합니다.
