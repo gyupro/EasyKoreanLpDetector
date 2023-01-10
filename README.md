@@ -21,6 +21,7 @@ pip으로 모두 다운 가능하니, 라이브러리 관련 에러가나면 pip
 
 git clone https://github.com/gyupro/EasyKoreanLpDetector/ 로 프로젝트를 다운받으신 후,
 streamlit run server.py 로 streamlit 서버를 실행시키세요.
+윈도우 저작권문제로 폰트를 삭제했습니다. 윈도우 font폴더에서 font를 옮긴뒤 사용해주세요.
 
 ```bash
 git clone https://github.com/gyupro/EasyKoreanLpDetector/
