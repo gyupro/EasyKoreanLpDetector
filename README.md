@@ -12,7 +12,7 @@
 번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)  
 데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)  
 
-requirements
+requirements  
 yolov5, streamlit, easyocr, pytorch, opencv, numpy.
 
 pip으로 모두 다운 가능하니, 라이브러리 관련 에러가나면 pip으로 다운로드 부탁드립니다.
