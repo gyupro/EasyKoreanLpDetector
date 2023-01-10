@@ -32,6 +32,8 @@ streamlit run server.py
 |잘 되는 예시|잘 되는 예시|잘 안되는 예시|
 |----|----|----|
 |![예시](detected/결과.PNG)|![예시](detected/캡처.PNG)|![예시](undetected/캡처.PNG)|  
+|![image](https://user-images.githubusercontent.com/79894531/211469966-db8fa936-1814-4424-b8cc-f0502f361995.png)|![image](https://user-images.githubusercontent.com/79894531/211470161-27ba5b81-8453-4edf-b485-92ae35524d0f.png)||
+
 
 강점 :
 1. 깃헙의 타 프로젝트들보다 인식을 잘합니다.
