@@ -6,9 +6,9 @@
 
 이미지가 입력으로 들어오면 자동차 인식 -> 자동차 내부에서 번호판 인식 -> 번호판에서 글자 인식입니다.
 
-자동차, 번호판 인식(https://github.com/ultralytics/yolov5)
-번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)
-데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)
+자동차, 번호판 인식(https://github.com/ultralytics/yolov5)  
+번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)  
+데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)  
 
 |잘 되는 예시|잘 안되는 예시|설명|
 |------|---|---|
