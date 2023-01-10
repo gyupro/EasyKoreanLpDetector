@@ -19,6 +19,9 @@ pip으로 모두 다운 가능하니, 라이브러리 관련 에러가나면 pip
 
 모든 weight들이 github 프로젝트에 올라가있기때문에 50MB정도 됍니다. (다로 다운로드 받으실것 없습니다.)
 
+git clone https://github.com/gyupro/EasyKoreanLpDetector/ 로 프로젝트를 다운받으신 후,
+streamlit run server.py 로 streamlit 서버를 실행시키세요.
+
 강점 :
 1. 깃헙의 타 프로젝트들보다 인식을 잘합니다.
 2. 코드가 쉽습니다.
