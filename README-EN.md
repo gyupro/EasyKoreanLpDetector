@@ -1,6 +1,6 @@
 # EasyKoreanLpDetector
 
-[Korean](README.md) | [English](README-EN.md)
+English | [Korean](README-KOR.md)
 
 
 [Test URL](http://aifolio.cafe24.com/LP/)  
