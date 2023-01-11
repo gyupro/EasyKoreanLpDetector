@@ -1,5 +1,8 @@
 # EasyKoreanLpDetector
 
+[Korean](README.md) | [English](README-EN.md)
+
+
 [테스트 URL](http://aifolio.cafe24.com/LP/)  
 깃헙에 어렵고 잘 안 돼는 한국 번호판 인식기밖에 없어서 공개합니다.
 도움이 되셨다면 스타한개 부탁드려요!
