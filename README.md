@@ -16,7 +16,7 @@ yolov5, streamlit, easyocr, pytorch, opencv, numpy.
 
 You can download all libraries with pip, if error occurs, download with pip
 
-All weight are uploaded to the project, so that size of repo is about 50MB ( You don't need to download any extra )
+All weights are uploaded to the project, so that size of repo is about 50MB ( You don't need to download any extra )
 
 
 ## Steps to run
