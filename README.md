@@ -4,19 +4,18 @@ English | [Korean](README-KOR.md)
 
 
 [Test URL](http://aifolio.cafe24.com/LP/)  
-I release this repo because there is no other options that work great on korean license plate!
-Please give it a star if this is helpful
+I am releasing this repository because there are no other options that work great on Korean license plates. Please give it a star if you find it helpful.
 
 ## Algorithm
 
-Input Image -> Detect cars -> Detece license plate in a car -> OCR
+Input Image -> Detect cars -> Detect Korean License Plate in Car  -> OCR
 
 ## requirements  
 yolov5, streamlit, easyocr, pytorch, opencv, numpy.
 
-You can download all libraries with pip, if error occurs, download with pip
+You can download all libraries using pip. If an error occurs, try downloading with pip again.
 
-All weights are uploaded to the project, so that size of repo is about 50MB ( You don't need to download any extra )
+All weights are included in the project, so size of this repository is about 50 MB. You don't need to download anything extra.
 
 
 ## Steps to run
@@ -38,15 +37,15 @@ streamlit run server.py
 
 
 ### Advantages :
-* This works better than other opensource proejcts on github
-* Easiest code on github
-* It's fast when you have GPU
-* You can upgrade the performance by training
-* It works well with 4k images that are taken from a phone
+* This project works better than other open-source projects on GitHub.
+* It has the easiest code of all projects on GitHub.
+*It is fast when you have a GPU.
+* You can improve performance by training.
+* It works well with 4K images taken from a phone.
 
-### limits :
+### Limitations :
 * The train is not perfectly done, Original yolov5 model is used to detect a car so that it does not perform well when a car is close to the camera
-* Old plates are sometimes not recognizable, but compared to old ones, new onews are recognized well.
+* Old license plates may not be easily recognizable, but compared to older ones, newer ones are more easily recognizable.
 
 ## References
 
