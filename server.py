@@ -49,7 +49,6 @@ def detect(car_m, lp_m, reader, path):
         if len(result) == 0:
             result_text.append('검출된 차 없음')
         else:
-            
             for rslt in result.xyxy[0]:
                 x2,y2,x3,y3 = [item1.cpu().detach().numpy().astype(np.int32) for item1 in rslt[:4]]
                 try:
