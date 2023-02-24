@@ -3,7 +3,6 @@
 English | [Korean](README-KOR.md)
 
 
-[Test URL](http://aifolio.cafe24.com/LP/)  
 I am releasing this repository because there are no other options that work great on Korean license plates. Please give it a star if you find it helpful.
 
 ## Algorithm
