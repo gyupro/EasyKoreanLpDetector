@@ -31,7 +31,7 @@ def load_model():
 import os
 
 def detect(car_m, lp_m, reader, path):
-    fontpath = "SpoqaHanSansNeo-Bold.ttf"
+    fontpath = "SpoqaHanSansNeo-Light.ttf"
     font = ImageFont.truetype(fontpath, 200)
     im = Image.open(path)
 
