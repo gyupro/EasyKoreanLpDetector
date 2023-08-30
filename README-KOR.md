@@ -48,3 +48,8 @@ streamlit run server.py
 한계 :
 1. 학습을 완벽하게 시키진 않았습니다. 자동차 검출도 yolov5 기본 모델로 했기때문에, 차가 가까우면 차 자체를 인식을 하지 못합니다.
 2. 번호판도 다양하게 학습시키지 않아서, 예전 번호판 등은 안되는것도 있습니다. 요즘건 비교적 잘됩니다.
+
+### 학습:
+* AIHUB 데이터를 활용했습니다. [AIHUB dataset](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)
+* OCR은 번호판, 캐릭터 데이터셋 80,000장 정도 이용했습니다.
+* AIHUB의 데이터셋은 번호판이 차에서 블러가 돼있기 때문에, 크롭된 번호판을 블러된 위치에 붙여서 검출학습 시켰습니다.
