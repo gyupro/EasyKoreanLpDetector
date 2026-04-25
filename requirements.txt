@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+streamlit
+easyocr
+opencv-python
+numpy
+torch
+torchvision
+ultralytics

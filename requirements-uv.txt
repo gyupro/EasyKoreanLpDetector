@@ -1,0 +1,10 @@
+# Install with:
+# uv pip install -r requirements-uv.txt --index-url https://download.pytorch.org/whl/cpu
+
+streamlit
+easyocr
+opencv-python
+numpy
+torch
+torchvision
+ultralytics
