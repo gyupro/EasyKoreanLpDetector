@@ -24,8 +24,6 @@ uv venv --python 3.11
 uv pip install -r requirements-uv.txt --index-url https://download.pytorch.org/whl/cpu
 ```
 
-> Windows users: install [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you get a DLL error on torch import.
-
 ## Steps to run
 
 ```bash

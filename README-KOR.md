@@ -30,8 +30,6 @@ uv venv --python 3.11
 uv pip install -r requirements-uv.txt --index-url https://download.pytorch.org/whl/cpu
 ```
 
-> Windows 사용자: torch import 시 DLL 오류가 나면 [Visual C++ 재배포 패키지](https://aka.ms/vs/17/release/vc_redist.x64.exe)를 설치하세요.
-
 ## 실행 방법
 
 ```bash
