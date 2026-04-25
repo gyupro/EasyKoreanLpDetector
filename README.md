@@ -9,23 +9,29 @@ I am releasing this repository because there are no other options that work grea
 
 Input Image -> Detect cars -> Detect Korean License Plate in Car  -> OCR
 
-## requirements  
-yolov5, streamlit, easyocr, pytorch, opencv, numpy.
+## Requirements
 
-You can download all libraries using pip. If an error occurs, try downloading with pip again.
+All weights are included in the project (~50 MB). No extra downloads needed.
 
-All weights are included in the project, so size of this repository is about 50 MB. You don't need to download anything extra.
+**pip**
+```bash
+pip install -r requirements.txt
+```
 
+**uv (recommended)**
+```bash
+uv venv --python 3.11
+uv pip install -r requirements-uv.txt --index-url https://download.pytorch.org/whl/cpu
+```
+
+> Windows users: install [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you get a DLL error on torch import.
 
 ## Steps to run
-
-1. Download repo with git clone https://github.com/gyupro/EasyKoreanLpDetector/  
-2. run streamlit server with streamlit run server.py 
 
 ```bash
 git clone https://github.com/gyupro/EasyKoreanLpDetector/
 cd EasyKoreanLpDetector
-streamlit run server.py
+streamlit run server.py --server.headless true
 ```
 
  

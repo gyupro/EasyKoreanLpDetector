@@ -15,20 +15,29 @@ Korean | [English](README.md)
 번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)  
 데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)  
 
-requirements  
-yolov5, streamlit, easyocr, pytorch, opencv, numpy.
+## Requirements
 
-pip으로 모두 다운 가능하니, 라이브러리 관련 에러가나면 pip으로 다운로드 부탁드립니다.
+모든 weight가 포함돼 있어 약 50MB입니다. 별도 다운로드 없습니다.
 
-모든 weight들이 github 프로젝트에 올라가있기때문에 50MB정도 됍니다. (따로 다운로드 받으실것 없습니다.)
+**pip**
+```bash
+pip install -r requirements.txt
+```
 
-git clone https://github.com/gyupro/EasyKoreanLpDetector/ 로 프로젝트를 다운받으신 후,
-streamlit run server.py 로 streamlit 서버를 실행시키세요.
+**uv (권장)**
+```bash
+uv venv --python 3.11
+uv pip install -r requirements-uv.txt --index-url https://download.pytorch.org/whl/cpu
+```
+
+> Windows 사용자: torch import 시 DLL 오류가 나면 [Visual C++ 재배포 패키지](https://aka.ms/vs/17/release/vc_redist.x64.exe)를 설치하세요.
+
+## 실행 방법
 
 ```bash
 git clone https://github.com/gyupro/EasyKoreanLpDetector/
 cd EasyKoreanLpDetector
-streamlit run server.py
+streamlit run server.py --server.headless true
 ```
 
  
