@@ -7,11 +7,13 @@ I am releasing this repository because there are no other options that work grea
 
 ## Algorithm
 
-Input Image -> Detect cars -> Detect Korean License Plate in Car  -> OCR
+Input Image -> Detect cars (YOLO26s) -> Detect Korean License Plate in Car (YOLOv5) -> OCR
+
+> Car detection upgraded to **Ultralytics YOLO26s** for faster CPU inference and end-to-end NMS-free prediction. License plate detector still uses the existing YOLOv5-trained weight (`lp_det.pt`).
 
 ## Requirements
 
-All weights are included in the project (~50 MB). No extra downloads needed.
+License plate weight is bundled in the project (~50 MB). The car detector weight (`yolo26s.pt`, ~20 MB) is downloaded automatically by Ultralytics on first run.
 
 **pip**
 ```bash
@@ -52,11 +54,11 @@ streamlit run server.py --server.headless true
 * It works well with 4K images taken from a phone.
 
 ### Limitations :
-* The train is not perfectly done, Original yolov5 model is used to detect a car so that it does not perform well when a car is close to the camera
+* Car detection now uses the pretrained YOLO26s (COCO) model — when a car fills most of the frame, detection can still miss; in that case the license plate detector falls back to running on the full image.
 * Old license plates may not be easily recognizable, but compared to older ones, newer ones are more easily recognizable.
 
 ## References
 
+* [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) (YOLO26)
 * [https://github.com/ultralytics/yolov5](https://github.com/ultralytics/yolov5)
-
 * [https://github.com/JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR)

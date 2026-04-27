@@ -4,6 +4,7 @@ import numpy as np
 import streamlit as st
 import torch
 from PIL import Image, ImageDraw, ImageFont
+from ultralytics import YOLO
 
 FONT_PATH = "SpoqaHanSansNeo-Light.ttf"
 FONT_SIZE = 200
@@ -17,9 +18,8 @@ st.set_page_config(layout="wide")
 
 @st.cache_resource
 def load_model():
-    car_m = torch.hub.load("ultralytics/yolov5", "yolov5s", force_reload=False, skip_validation=True)
-    car_m.classes = CAR_CLASSES
-    lp_m = torch.hub.load("ultralytics/yolov5", "custom", "lp_det.pt")
+    car_m = YOLO("yolo26s.pt")
+    lp_m = torch.hub.load("ultralytics/yolov5", "custom", "lp_det.pt", trust_repo=True)
     reader = easyocr.Reader(
         ["en"],
         detect_network="craft",
@@ -60,7 +60,7 @@ def detect(car_m, lp_m, reader, path):
     font = ImageFont.truetype(FONT_PATH, FONT_SIZE)
     im = Image.open(path)
     to_draw = np.array(im)
-    locs = car_m(im).xyxy[0]
+    locs = car_m(im, classes=CAR_CLASSES, verbose=False)[0].boxes.xyxy
     result_text = []
 
     if len(locs) == 0:

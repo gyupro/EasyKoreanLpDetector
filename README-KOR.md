@@ -9,15 +9,18 @@ Korean | [English](README.md)
 
 알고리즘
 
-이미지가 입력으로 들어오면 자동차 인식 -> 자동차 내부에서 번호판 인식 -> 번호판에서 글자 인식입니다.
+이미지가 입력으로 들어오면 자동차 인식(YOLO26s) -> 자동차 내부에서 번호판 인식(YOLOv5) -> 번호판에서 글자 인식입니다.
 
-자동차, 번호판 인식(https://github.com/ultralytics/yolov5)  
+> 자동차 검출기는 **Ultralytics YOLO26s**로 업그레이드되었습니다 (NMS-free, CPU 추론 속도 향상). 번호판 검출기는 기존 YOLOv5 학습 가중치(`lp_det.pt`)를 그대로 사용합니다.
+
+자동차 인식(https://github.com/ultralytics/ultralytics) — YOLO26  
+번호판 인식(https://github.com/ultralytics/yolov5)  
 번호판 글자 인식(https://github.com/JaidedAI/EasyOCR)  
 데이터셋 (https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=172)  
 
 ## Requirements
 
-모든 weight가 포함돼 있어 약 50MB입니다. 별도 다운로드 없습니다.
+번호판 검출 weight는 프로젝트에 포함되어 있습니다 (약 50MB). 자동차 검출 weight (`yolo26s.pt`, 약 20MB)는 첫 실행 시 Ultralytics가 자동으로 다운로드합니다.
 
 **pip**
 ```bash
@@ -53,7 +56,7 @@ streamlit run server.py --server.headless true
 5. 휴대폰으로 찍은 4K 사진들이 잘됩니다.
 
 한계 :
-1. 학습을 완벽하게 시키진 않았습니다. 자동차 검출도 yolov5 기본 모델로 했기때문에, 차가 가까우면 차 자체를 인식을 하지 못합니다.
+1. 자동차 검출은 COCO 사전학습 YOLO26s 모델을 사용합니다. 차가 화면을 거의 채울 정도로 가까우면 검출이 안 될 수 있고, 그 경우엔 번호판 검출기가 전체 이미지에서 직접 동작하도록 fallback 처리가 되어 있습니다.
 2. 번호판도 다양하게 학습시키지 않아서, 예전 번호판 등은 안되는것도 있습니다. 요즘건 비교적 잘됩니다.
 
 ### 학습:

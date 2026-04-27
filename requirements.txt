@@ -6,3 +6,9 @@ numpy
 torch
 torchvision
 ultralytics
+tqdm
+seaborn
+pandas
+matplotlib
+gitpython
+thop
